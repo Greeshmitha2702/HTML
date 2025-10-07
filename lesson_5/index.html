@@ -1,0 +1,96 @@
+<!--Semantic tags-->
+<!--header,main,footer,nav,h1,lists-->
+<!--multiple header,footers,nav(navigation) but one main-->
+<!--for multiple nav's, which area is which should be known, so that's why we use aria-label-->
+<!--they don't change the structure of page. instead they tell the browser how to interpret-->
+<!--div,span also there-mostly used in css-->
+<!--html5 outliner extension in chrome helps to know what sections are there like wise. so these articles, sections etc can be known there-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>semantic tags</title>
+        <!--semantic tags are the one which helps developers and browser to understand-->
+    </head>
+    <body>
+        <header>
+        <h1>My self</h1>
+        
+        <nav aria-labelledby="main-navigation"><!--here nav label is connected to h1, so we use aria-labelledby. otherwise, we use aria-label-->
+            <h1 id="main-navigation">Main navigation</h1>
+            <ul>
+                <li><a href="#self">About me</a></li>
+                <li><a href="#movie">About movies</a></li>
+                <li><a href="#hero">About heros</a></li>
+                <li><a href="#place">About places</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+        <section id="self"><!--instead of sections, we can even add articles.articles define clearly and inside each article, we can have multiple section tags-->
+        visit us at <a href="https://www.youtube.com/">&copy;greesh</a>
+        <p>Know more about me <a href="about.html">here</a></p>
+        </section>
+        <section id="movie">
+        <p>The movies I like</p>
+        <ol>
+            <li>Jersey</li>
+            <li>Nuvvu naku nachav</li>
+            <li>Sakhi</li>
+            <li>8 vasanthalu</li>
+        </ol>
+        </section>
+
+        <section id="hero">
+        <p>The Heroes I love</p>
+        <ul>
+            <li>Nani</li>
+            <li>Mahesh babu</li>
+            <li>Pawan Kalyan</li>
+            <li>Jr. NTR</li>
+        </ul>
+        </section>
+
+        <section id="place">
+        <p>Places I love</p>
+        <dl>
+            <dt>Ooty</dt>
+            <dd>It has good climate</dd>
+            <dt>Vizag</dt>
+            <dd>Good as it has many beaches</dd>
+            <dt>Tirumala</dt>
+            <dd>Heavenly place</dd>
+            <dt>Bhadrinath</dt>
+            <dd>Ever wanted to visit atleast once in life time</dd>
+        </dl>
+        </section>
+        <hr>
+        <ul>
+            <li>
+                <a href="html.png" download>Download</a>
+            </li>
+            <li>
+                <a href="mailto:bingumallagreeshmitha@gmail.com">Mail here</a>
+            </li>
+            <li>
+                <a href="tel:+919493256789">Dial</a>
+            </li>
+            <li>
+                open <a href="https://www.google.com/" target="_blank">Google</a>
+            </li>
+        </ul>
+        <aside><!--not much imp-->
+            <details>
+                <summary>
+                    At what <mark>time</mark> do I sleep?
+                </summary>
+                <p>I usually sleep at <time datetime="23:00">11 PM</time> and for <time datetime="PT7H">7 hrs</time></p>
+            </details>
+        </aside>
+        </main>
+        <hr>
+        <footer>
+        <a href="#">Back to top</a>
+        </footer>
+    </body>
+</html>
