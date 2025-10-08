@@ -6,7 +6,51 @@
     </head>
     <body>
         <table>
-            
+            <caption>Daily Schedule</caption>
+            <thead>
+                <tr>
+                    <!--th is for headers and scope tells whether that header is for row or col-->
+                    <th>&nbsp;</th><!--if it's not kept,next col's headings is taken by this-->
+                    <th scope="col">Time</th><!--col headers-->
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+        <tbody>
+           <tr>
+                <th scope="row">Early morning</th>
+                <td><time datetime="5:00">5:00AM</time>-<time datetime="6:00">6:00AM</time></td>
+                <td>Workout</td>
+           </tr>
+           <tr>
+                <th scope="row">morning</th>
+                <td><time datetime="6:00">6:00AM</time>-<time datetime="7:00">7:00AM</time></td>
+                <td>Study</td>
+           </tr>
+           <tr>
+                <th scope="row">Good morning</th>
+                <td><time datetime="7:00">7:00AM</time>-<time datetime="8:00">8:00AM</time></td>
+                <td>Ready for college</td>
+           </tr>
+           <tr>
+                <th scope="row">Afternoon</th>
+                <td><time datetime="8:00">8:00AM</time>-<time datetime="4:00">4:00PM</time></td>
+                <td>College</td>
+           </tr> 
+           <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">Other time</td>
+                <td>Movies</td>
+           </tr>
+           <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+           </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">That's end of my day</td>
+            </tr>
+        </tfoot>
         </table>
     </body>
 </html>
