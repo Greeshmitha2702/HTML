@@ -1,5 +1,6 @@
-table{
-    border:2px;
+table,tr,td,th{
+    border:2px solid;
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
 }
